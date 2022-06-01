@@ -17,7 +17,7 @@ include("includes/main.php");
 </a>
     </div>
     <!-- Main -->
-    <div class="wrapper">
+    <div class="wrapper_N">
             <h1>Featured Collection<h1>
             
       </div>

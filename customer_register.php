@@ -4,7 +4,7 @@ session_start();
 
 include("includes/db.php");
 include("functions/functions.php");
-include("includes/header.php");
+include("includes/link.php");
 
 
 
@@ -22,7 +22,7 @@ include("includes/header.php");
 
   <div class="main-box">
 
-    <div class="wrapper">
+    <div class="wrapper_N">
       <!--      <div class="textanimate">-->
       <!--          <h1>-->
       <!--              <a href="" class="typewrite" data-period="2000" data-type='[ "REGESTRATION" ]'>-->

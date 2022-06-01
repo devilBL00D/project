@@ -931,7 +931,7 @@ img {
   color: white;
 }
 
-.wrapper {
+.wrapper_N {
   text-align: center;
   width: 40em;
   margin: 2.5em auto;
@@ -940,11 +940,11 @@ img {
   border-top: 1px solid #eee;
 }
 
-.wrapper> :first-child {
+.wrapper_N> :first-child {
   margin-top: 0;
 }
 
-.wrapper> :last-child {
+.wrapper_N> :last-child {
   margin-bottom: 0;
 }
 

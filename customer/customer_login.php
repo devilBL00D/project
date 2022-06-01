@@ -1,12 +1,5 @@
 <div class="main-box">
-        <div class="wrapper">
-            <!--      <div class="textanimate">-->
-            <!--          <h1>-->
-            <!--              <a href="" class="typewrite" data-period="2000" data-type='[ "REGESTRATION" ]'>-->
-            <!--                  <span class="wrap"></span>-->
-            <!--              </a>-->
-            <!--          </h1>-->
-            <!--      </div>-->
+        <div class="wrapper_C">
             <div class="heading">
                 <h2>Log IN</h2>
             </div>
@@ -26,10 +19,10 @@
                     <input type="Submit" name="login" value="Log in">
                 </div>
                 <div class="text">
-                    <h3> <a href="forgotpassword.php">Forgot password?</a></h3>
+                    <h3> <a href="../forgot_pass.php">Forgot password?</a></h3>
                 </div>
                 <div class="text">
-                    <h3> <a href="./wholesaler/wholesaler_login.php">Click here for wholesaler login</a></h3>
+                    <h3> <a href="../wholesaler/wholesaler_login.php">Click here for wholesaler login</a></h3>
                 </div>
             </form>
         </div>
@@ -37,11 +30,13 @@
 
                 <h3>New User ?</h3>
 
+            <div class="button_wrapper">
+                <div class="register-button" onclick="window.location.href = '../customer_register.php';">
+                    <p>Register now </p>
 
-            <div class="register-button" onclick="window.location.href = 'register.php';">
-               <p>Register now </p>
-
+                </div>
             </div>
+
 
 
         </div>

@@ -79,7 +79,7 @@ if (isset($_SESSION['token']) && isset($_SESSION['email']) && $_SESSION['role']=
 
 
         <div class="main-box">
-            <div class="wrapper">
+            <div class="wrapper_N">
 
                 <h2>Enter a new Password</h2>
                 <!--            <p> Please enter a password containing numbers,alphabets & symbols for max</p>-->
