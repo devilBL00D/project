@@ -10,8 +10,9 @@
     <link rel="shortcut icon" href="/images/LOGO.png" type="image/png">
     <title>Business Connect</title>
 
-    <link href="styles/registerstyle.css" rel="stylesheet">
-    <link href="/customer/styles/customer_login.css" rel="stylesheet">
+
+    <link href="../styles/customer_login.css" rel="stylesheet">
+    <link href="./s.css" rel="stylesheet">
 
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
