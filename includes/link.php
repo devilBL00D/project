@@ -11,7 +11,7 @@
     <title>Business Connect</title>
 
     <link href="styles/registerstyle.css" rel="stylesheet">
-    <link href="/customer/styles/customer_login.css" rel="stylesheet">
+
 
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
