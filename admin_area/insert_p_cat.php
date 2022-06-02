@@ -70,38 +70,7 @@ if (!isset($_SESSION['admin_email'])) {
                             </div>
 
                         </div><!-- form-group Ends -->
-                        <div class="form-group">
-                            <!-- form-group Starts -->
-
-                            <label class="col-md-3 control-label"> Select A Manufacturer </label>
-
-                            <div class="col-md-6">
-
-                                <select class="form-control" name="manufacturer" required> 
-                                    <!-- select manufacturer Starts -->
-
-                                    <option value=""> Select A Manufacturer </option>
-
-                                    <?php
-                                    
-
-                                    $get_manufacturer = "select * from manufacturers";
-                                    $run_manufacturer = mysqli_query($con, $get_manufacturer);
-                                    while ($row_manufacturer = mysqli_fetch_array($run_manufacturer)) {
-                                        $manufacturer_id = $row_manufacturer['manufacturer_id'];
-                                        $manufacturer_title = $row_manufacturer['manufacturer_title'];
-
-                                        echo "<option value='$manufacturer_id'>$manufacturer_title</option>";
-                                    }
-
-                                    ?>
-
-                                </select><!-- select manufacturer Ends -->
-
-                            </div>
-
-                        </div><!-- form-group Ends -->
-
+                        
                         <div class="form-group">
                             <!-- form-group Starts -->
 
@@ -177,7 +146,7 @@ if (!isset($_SESSION['admin_email'])) {
 
         move_uploaded_file($temp_name, "other_images/$p_cat_image");
 
-        $insert_p_cat = "insert into product_categories (p_cat_title,p_cat_top,p_cat_image,p_manufacturer_id) values ('$p_cat_title','$p_cat_top','$p_cat_image','$p_manufacturer_id')";
+        $insert_p_cat = "insert into product_categories (p_cat_title,p_cat_top,p_cat_image) values ('$p_cat_title','$p_cat_top','$p_cat_image')";
 
         $run_p_cat = mysqli_query($con, $insert_p_cat);
 

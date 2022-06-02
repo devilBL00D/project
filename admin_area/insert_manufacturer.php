@@ -83,7 +83,7 @@ if (!isset($_SESSION['admin_email'])) {
 
                                 <label> Yes </label>
 
-                                <input type="radio" name="manufacturer_top" value="no" checked >
+                                <input type="radio" name="manufacturer_top" value="no" checked>
 
                                 <label> No </label>
 

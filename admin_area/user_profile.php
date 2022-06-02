@@ -2,276 +2,294 @@
 
 
 
-if(!isset($_SESSION['admin_email'])){
+if (!isset($_SESSION['admin_email'])) {
 
-echo "<script>window.open('login.php','_self')</script>";
-
-}
-
-else {
+    echo "<script>window.open('login.php','_self')</script>";
+} else {
 
 ?>
 
-<?php
+    <?php
 
-if(isset($_GET['user_profile'])){
+    if (isset($_GET['user_profile'])) {
 
-$edit_id = $_GET['user_profile'];
+        $edit_id = $_GET['user_profile'];
 
-$get_admin = "select * from admins where admin_id='$edit_id'";
+        $get_admin = "select * from admins where admin_id='$edit_id'";
 
-$run_admin = mysqli_query($con,$get_admin);
+        $run_admin = mysqli_query($con, $get_admin);
 
-$row_admin = mysqli_fetch_array($run_admin);
+        $row_admin = mysqli_fetch_array($run_admin);
 
-$admin_id = $row_admin['admin_id'];
+        $admin_id = $row_admin['admin_id'];
 
-$admin_name = $row_admin['admin_name'];
+        $admin_name = $row_admin['admin_name'];
 
-$admin_email = $row_admin['admin_email'];
+        $admin_email = $row_admin['admin_email'];
 
-$admin_pass = $row_admin['admin_pass'];
+        $admin_pass = $row_admin['admin_pass'];
 
-$admin_image = $row_admin['admin_image'];
+        $admin_image = $row_admin['admin_image'];
 
-$new_admin_image = $row_admin['admin_image'];
+        $new_admin_image = $row_admin['admin_image'];
 
-$admin_country = $row_admin['admin_country'];
+        $admin_country = $row_admin['admin_country'];
 
-$admin_job = $row_admin['admin_job'];
+        $admin_job = $row_admin['admin_job'];
 
-$admin_contact = $row_admin['admin_contact'];
+        $admin_contact = $row_admin['admin_contact'];
 
-$admin_about = $row_admin['admin_about'];
+        $admin_about = $row_admin['admin_about'];
+    }
 
 
 
-}
+    ?>
 
 
+    <div class="row">
+        <!-- 1  row Starts -->
 
-?>
+        <div class="col-lg-12">
+            <!-- col-lg-12 Starts -->
 
+            <ol class="breadcrumb">
+                <!-- breadcrumb Starts -->
 
-<div class="row" ><!-- 1  row Starts -->
+                <li class="active">
 
-<div class="col-lg-12" ><!-- col-lg-12 Starts -->
+                    <i class="fa fa-dashboard"></i> Dashboard / Edit Profile
 
-<ol class="breadcrumb" ><!-- breadcrumb Starts -->
+                </li>
 
-<li class="active" >
 
-<i class="fa fa-dashboard" ></i> Dashboard / Edit Profile
 
-</li>
+            </ol><!-- breadcrumb Ends -->
 
+        </div><!-- col-lg-12 Ends -->
 
+    </div><!-- 1  row Ends -->
 
-</ol><!-- breadcrumb Ends -->
+    <div class="row">
+        <!-- 2 row Starts -->
 
-</div><!-- col-lg-12 Ends -->
+        <div class="col-lg-12">
+            <!-- col-lg-12 Starts -->
 
-</div><!-- 1  row Ends -->
+            <div class="panel panel-default">
+                <!-- panel panel-default Starts -->
 
-<div class="row" ><!-- 2 row Starts -->
+                <div class="panel-heading">
+                    <!-- panel-heading Starts -->
 
-<div class="col-lg-12" ><!-- col-lg-12 Starts -->
+                    <h3 class="panel-title">
 
-<div class="panel panel-default" ><!-- panel panel-default Starts -->
+                        <i class="fa fa-money fa-fw"></i> Edit Profile
 
-<div class="panel-heading" ><!-- panel-heading Starts -->
+                    </h3>
 
-<h3 class="panel-title" >
 
-<i class="fa fa-money fa-fw" ></i> Edit Profile
+                </div><!-- panel-heading Ends -->
 
-</h3>
 
+                <div class="panel-body">
+                    <!-- panel-body Starts -->
 
-</div><!-- panel-heading Ends -->
+                    <form class="form-horizontal" method="post" enctype="multipart/form-data">
+                        <!-- form-horizontal Starts -->
 
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-<div class="panel-body"><!-- panel-body Starts -->
+                            <label class="col-md-3 control-label">User Name: </label>
 
-<form class="form-horizontal" method="post" enctype="multipart/form-data"><!-- form-horizontal Starts -->
+                            <div class="col-md-6">
+                                <!-- col-md-6 Starts -->
 
-<div class="form-group"><!-- form-group Starts -->
+                                <input type="text" name="admin_name" class="form-control" required value="<?php echo $admin_name; ?>">
 
-<label class="col-md-3 control-label">User Name: </label>
+                            </div><!-- col-md-6 Ends -->
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+                        </div><!-- form-group Ends -->
 
-<input type="text" name="admin_name" class="form-control" required value="<?php echo $admin_name; ?>">
 
-</div><!-- col-md-6 Ends -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-</div><!-- form-group Ends -->
+                            <label class="col-md-3 control-label">User Email: </label>
 
+                            <div class="col-md-6">
+                                <!-- col-md-6 Starts -->
 
-<div class="form-group"><!-- form-group Starts -->
+                                <input type="text" name="admin_email" class="form-control" required value="<?php echo $admin_email; ?>">
 
-<label class="col-md-3 control-label">User Email: </label>
+                            </div><!-- col-md-6 Ends -->
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+                        </div><!-- form-group Ends -->
 
-<input type="text" name="admin_email" class="form-control" required value="<?php echo $admin_email; ?>">
 
-</div><!-- col-md-6 Ends -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-</div><!-- form-group Ends -->
+                            <label class="col-md-3 control-label">User Password: </label>
 
+                            <div class="col-md-6">
+                                <!-- col-md-6 Starts -->
 
-<div class="form-group"><!-- form-group Starts -->
+                                <input type="text" name="admin_pass" class="form-control" required>
 
-<label class="col-md-3 control-label">User Password: </label>
+                            </div><!-- col-md-6 Ends -->
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+                        </div><!-- form-group Ends -->
 
-<input type="text" name="admin_pass" class="form-control" required value="<?php echo $admin_pass; ?>">
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-</div><!-- col-md-6 Ends -->
+                            <label class="col-md-3 control-label">User Country: </label>
 
-</div><!-- form-group Ends -->
+                            <div class="col-md-6">
+                                <!-- col-md-6 Starts -->
 
-<div class="form-group"><!-- form-group Starts -->
+                                <input type="text" name="admin_country" class="form-control" required value="<?php echo $admin_country; ?>">
 
-<label class="col-md-3 control-label">User Country: </label>
+                            </div><!-- col-md-6 Ends -->
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+                        </div><!-- form-group Ends -->
 
-<input type="text" name="admin_country" class="form-control" required value="<?php echo $admin_country; ?>">
 
-</div><!-- col-md-6 Ends -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-</div><!-- form-group Ends -->
+                            <label class="col-md-3 control-label">User Job: </label>
 
+                            <div class="col-md-6">
+                                <!-- col-md-6 Starts -->
 
-<div class="form-group"><!-- form-group Starts -->
+                                <input type="text" name="admin_job" class="form-control" required value="<?php echo $admin_job; ?>">
 
-<label class="col-md-3 control-label">User Job: </label>
+                            </div><!-- col-md-6 Ends -->
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+                        </div><!-- form-group Ends -->
 
-<input type="text" name="admin_job" class="form-control" required value="<?php echo $admin_job; ?>">
 
-</div><!-- col-md-6 Ends -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-</div><!-- form-group Ends -->
+                            <label class="col-md-3 control-label">User Contact: </label>
 
+                            <div class="col-md-6">
+                                <!-- col-md-6 Starts -->
 
-<div class="form-group"><!-- form-group Starts -->
+                                <input type="text" name="admin_contact" class="form-control" required value="<?php echo $admin_contact; ?>">
 
-<label class="col-md-3 control-label">User Contact: </label>
+                            </div><!-- col-md-6 Ends -->
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+                        </div><!-- form-group Ends -->
 
-<input type="text" name="admin_contact" class="form-control" required value="<?php echo $admin_contact; ?>">
 
-</div><!-- col-md-6 Ends -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-</div><!-- form-group Ends -->
+                            <label class="col-md-3 control-label">User About: </label>
 
+                            <div class="col-md-6">
+                                <!-- col-md-6 Starts -->
 
-<div class="form-group"><!-- form-group Starts -->
+                                <textarea name="admin_about" class="form-control" rows="3"> <?php echo $admin_about; ?> </textarea>
 
-<label class="col-md-3 control-label">User About: </label>
+                            </div><!-- col-md-6 Ends -->
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+                        </div><!-- form-group Ends -->
 
-<textarea name="admin_about" class="form-control" rows="3"> <?php echo $admin_about; ?> </textarea>
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-</div><!-- col-md-6 Ends -->
+                            <label class="col-md-3 control-label">User Image: </label>
 
-</div><!-- form-group Ends -->
+                            <div class="col-md-6">
+                                <!-- col-md-6 Starts -->
 
-<div class="form-group"><!-- form-group Starts -->
+                                <input type="file" name="admin_image" class="form-control">
+                                <br>
+                                <img src="admin_images/<?Php echo $admin_image; ?>" width="70" height="70">
 
-<label class="col-md-3 control-label">User Image: </label>
+                            </div><!-- col-md-6 Ends -->
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+                        </div><!-- form-group Ends -->
 
-<input type="file" name="admin_image" class="form-control" >
-<br>
-<img src="admin_images/<?Php echo $admin_image; ?>" width="70" height="70" >
 
-</div><!-- col-md-6 Ends -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-</div><!-- form-group Ends -->
+                            <label class="col-md-3 control-label"></label>
 
+                            <div class="col-md-6">
+                                <!-- col-md-6 Starts -->
 
-<div class="form-group"><!-- form-group Starts -->
+                                <input type="submit" name="update" value="Update User" class="btn btn-primary form-control">
 
-<label class="col-md-3 control-label"></label>
+                            </div><!-- col-md-6 Ends -->
 
-<div class="col-md-6"><!-- col-md-6 Starts -->
+                        </div><!-- form-group Ends -->
 
-<input type="submit" name="update" value="Update User" class="btn btn-primary form-control">
 
-</div><!-- col-md-6 Ends -->
+                    </form><!-- form-horizontal Ends -->
 
-</div><!-- form-group Ends -->
+                </div><!-- panel-body Ends -->
 
+            </div><!-- panel panel-default Ends -->
 
-</form><!-- form-horizontal Ends -->
+        </div><!-- col-lg-12 Ends -->
 
-</div><!-- panel-body Ends -->
 
-</div><!-- panel panel-default Ends -->
+    </div><!-- 2 row Ends -->
 
-</div><!-- col-lg-12 Ends -->
+    <?php
 
+    if (isset($_POST['update'])) {
 
-</div><!-- 2 row Ends -->
+        $admin_name = $_POST['admin_name'];
 
-<?php
+        $admin_email = $_POST['admin_email'];
 
-if(isset($_POST['update'])){
+        $admin_pass = $_POST['admin_pass'];
 
-$admin_name = $_POST['admin_name'];
+        $admin_country = $_POST['admin_country'];
 
-$admin_email = $_POST['admin_email'];
+        $admin_job = $_POST['admin_job'];
 
-$admin_pass = $_POST['admin_pass'];
+        $admin_contact = $_POST['admin_contact'];
 
-$admin_country = $_POST['admin_country'];
+        $admin_about = $_POST['admin_about'];
 
-$admin_job = $_POST['admin_job'];
 
-$admin_contact = $_POST['admin_contact'];
+        $admin_image = $_FILES['admin_image']['name'];
 
-$admin_about = $_POST['admin_about'];
+        $temp_admin_image = $_FILES['admin_image']['tmp_name'];
 
+        move_uploaded_file($temp_admin_image, "admin_images/$admin_image");
 
-$admin_image = $_FILES['admin_image']['name'];
+        if (empty($admin_image)) {
 
-$temp_admin_image = $_FILES['admin_image']['tmp_name'];
+            $admin_image = $new_admin_image;
+        }
 
-move_uploaded_file($temp_admin_image,"admin_images/$admin_image");
+        $update_admin = "update admins set admin_name='$admin_name',admin_email='$admin_email',admin_pass='$admin_pass',admin_image='$admin_image',admin_contact='$admin_contact',admin_country='$admin_country',admin_job='$admin_job',admin_about='$admin_about' where admin_id='$admin_id'";
 
-if(empty($admin_image)){
+        $run_admin = mysqli_query($con, $update_admin);
 
-$admin_image = $new_admin_image;
+        if ($run_admin) {
 
-}
+            echo "<script>alert('User Has Been Updated successfully and login again')</script>";
 
-$update_admin = "update admins set admin_name='$admin_name',admin_email='$admin_email',admin_pass='$admin_pass',admin_image='$admin_image',admin_contact='$admin_contact',admin_country='$admin_country',admin_job='$admin_job',admin_about='$admin_about' where admin_id='$admin_id'";
+            echo "<script>window.open('login.php','_self')</script>";
 
-$run_admin = mysqli_query($con,$update_admin);
+            session_destroy();
+        }
+    }
 
-if($run_admin){
 
-echo "<script>alert('User Has Been Updated successfully and login again')</script>";
-
-echo "<script>window.open('login.php','_self')</script>";
-
-session_destroy();
-
-}
-
-}
-
-
-?>
+    ?>
 
 
 

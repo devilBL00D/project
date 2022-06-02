@@ -67,7 +67,6 @@ if (!isset($_SESSION['admin_email'])) {
 
                                     <th>Product Category Id</th>
                                     <th>Product Category Title</th>
-                                    <th>Manufacturer</th>
                                     <th>Delete Product Category</th>
                                     <th>Edit Product Category</th>
 
@@ -93,12 +92,7 @@ if (!isset($_SESSION['admin_email'])) {
 
                                     $p_cat_title = $row_p_cats['p_cat_title'];
 
-                                    $p_manufacturer_id = $row_p_cats['p_manufacturer_id'];
 
-                                    $get_manufacturer_dtls = "select * from manufacturers where manufacturer_id=$p_manufacturer_id";
-                                    $run_manufacturer_dtls = mysqli_query($con, $get_manufacturer_dtls);
-                                    $row_manufacturers_dtls_array = mysqli_fetch_array($run_manufacturer_dtls);
-                                    $p_manufacturer_title = $row_manufacturers_dtls_array['manufacturer_title'];
                                     $i++;
 
                                 ?>
@@ -108,8 +102,6 @@ if (!isset($_SESSION['admin_email'])) {
                                         <td> <?php echo $i; ?> </td>
 
                                         <td> <?php echo $p_cat_title; ?> </td>
-
-                                        <td><?php echo $p_manufacturer_title; ?></td>
 
 
                                         <td>
