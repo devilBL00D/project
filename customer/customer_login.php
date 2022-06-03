@@ -22,7 +22,7 @@
                     <h3> <a href="../forgot_pass.php">Forgot password?</a></h3>
                 </div>
                 <div class="text">
-                    <h3> <a href="../wholesaler/wholesaler_login.php">Click here for wholesaler login</a></h3>
+                    <h3> <a href="./wholesaler/wholesaler_login.php">Click here for wholesaler login</a></h3>
                 </div>
             </form>
         </div>

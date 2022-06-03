@@ -455,6 +455,15 @@ if (!isset($_SESSION['admin_email'])) {
                 </li><!-- terms li Ends -->
 
 
+                <li>
+
+                    <a href="index.php?view_wholesaler">
+
+                        <i class="fa fa-fw fa-edit"></i> View Wholesaler
+
+                    </a>
+
+                </li>
 
                 <li>
 

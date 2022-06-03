@@ -185,6 +185,10 @@ if (!isset($_SESSION['admin_email'])) {
 
                         include("view_customers.php");
                     }
+                    if (isset($_GET['view_wholesaler'])) {
+
+                        include("view_wholesaler.php");
+                    }
 
                     if (isset($_GET['customer_delete'])) {
 
