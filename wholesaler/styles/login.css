@@ -42,11 +42,12 @@
     align-items: center;
     flex-direction: column;
     background: #fff;
+  
     padding: 3rem;
     border-radius: 6px;
     box-shadow: 0 5px 10px #2f3d47;
     max-height: 16rem;
-    width: 25rem;
+    width: 30rem;
     margin-top: 2rem;
     margin-bottom: 6vh;
 
