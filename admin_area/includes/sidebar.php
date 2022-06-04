@@ -177,63 +177,7 @@ if (!isset($_SESSION['admin_email'])) {
 
                 </li><!-- Products li Ends -->
 
-                <li>
-                    <!-- Bundles Li Starts --->
-
-                    <a href="#" data-toggle="collapse" data-target="#bundles">
-
-                        <i class="fa fa-fw fa-edit"></i> Bundles
-
-                        <i class="fa fa-fw fa-caret-down"></i>
-
-                    </a>
-
-                    <ul id="bundles" class="collapse">
-
-                        <li>
-                            <a href="index.php?insert_bundle"> Insert Bundle </a>
-                        </li>
-
-                        <li>
-                            <a href="index.php?view_bundles"> View Bundles </a>
-                        </li>
-
-                    </ul>
-
-                </li><!-- Bundles Li Ends --->
-
-                <li>
-                    <!-- relations li Starts -->
-
-                    <a href="#" data-toggle="collapse" data-target="#relations">
-                        <!-- anchor Starts -->
-
-                        <i class="fa fa-fw fa-retweet"></i> Assign Products To Bundles Relations
-
-                        <i class="fa fa-fw fa-caret-down"></i>
-
-                    </a><!-- anchor Ends -->
-
-                    <ul id="relations" class="collapse">
-                        <!-- collapse Starts -->
-
-                        <li>
-
-                            <a href="index.php?insert_rel"> Insert Relation </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a href="index.php?view_rel"> View Relations </a>
-
-                        </li>
-
-                    </ul><!-- collapse Ends -->
-
-
-                </li><!-- relations li Ends -->
+                
 
 
 
