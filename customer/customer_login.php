@@ -26,11 +26,11 @@
                 </div>
             </form>
         </div>
-        <div class="register-box"  >
+        <div class="register-box1"  >
 
                 <h3>New User ?</h3>
 
-            <div class="button_wrapper">
+            <div class="button_wrapper1">
                 <div class="register-button" onclick="window.location.href = '../customer_register.php';">
                     <p>Register now </p>
 
