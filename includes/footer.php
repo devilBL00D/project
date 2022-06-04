@@ -126,7 +126,7 @@
 			</div>
 
 			<div class="designby">
-				Design by Nijam Shrestha
+				Design by AMNY
 			</div>
 		</div>
 	</div>

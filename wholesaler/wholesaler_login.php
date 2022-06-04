@@ -1,94 +1,43 @@
 <?php
 session_start();
 include("includes/db.php");
-include("../includes/header.php");
+include("includes/header.php");
 include("functions/functions.php");
 include("includes/main.php");
 ?>
-<div class="box">
-    <!-- box Starts -->
+    <div class="main-box">
+    <p class="text-muted">
+        This portal is for wholesaler login only. If you are not a wholesaler please use the cutomer login link below.
 
-    <div class="box-header">
-        <!-- box-header Starts -->
+    </p>
+    <div class="wrapper_W">
+        <div class="heading">
+            <h2>Log IN</h2>
+        </div>
 
-        <center>
+        <form action="" method ="post">
 
-            <h1>Login</h1>
-
-            <p class="lead">Already our Customer</p>
-
-
-        </center>
-
-        <p class="text-muted">
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-
-        </p>
+            <div class="input-box">
+                <input type="email" name="c_email" placeholder="Enter your email" value="<?php echo isset($_POST['email'])? trim($_POST['email']):'';?>" required>
+            </div>
 
 
+            <div class="input-box">
+                <input type="password" name="c_pass" placeholder="Enter password" required>
+            </div>
 
-
-    </div><!-- box-header Ends -->
-
-    <form action="" method="post">
-        <!--form Starts -->
-
-        <div class="form-group">
-            <!-- form-group Starts -->
-
-            <label>Email</label>
-
-            <input type="text" class="form-control" name="c_email" required>
-
-        </div><!-- form-group Ends -->
-
-        <div class="form-group">
-            <!-- form-group Starts -->
-
-            <label>Password</label>
-
-            <input type="password" class="form-control" name="c_pass" required>
-
-            <h4 align="center">
-
-                <a href="forgot_pass.php"> Forgot Password </a>
-
-            </h4>
-
-        </div><!-- form-group Ends -->
-
-        <div class="text-center">
-            <!-- text-center Starts -->
-
-            <button name="login" value="Login" class="btn btn-primary">
-
-                <i class="fa fa-sign-in"></i> Log in
-
-
-            </button>
-
-        </div><!-- text-center Ends -->
-
-
-    </form>
-    <!--form Ends -->
-
-    <center>
-        <!-- center Starts -->
-
-        <a href="customer_register.php">
-
-            <h3>New ? Register Here</h3>
-
-        </a>
-
-        <a href="../x`checkout.php">Customer Login</a>
-
-
-    </center><!-- center Ends -->
-
-
-</div><!-- box Ends -->
+            <div class="input-box button" >
+                <input type="Submit" name="login" value="Sign In">
+            </div>
+            <div class="text">
+                <h3> <a href="../forgot_pass.php">Forgot password?</a></h3>
+            </div>
+            <div class="text">
+                <h3> <a href="../customer/customer_login.php">Click here for customer login</a></h3>
+            </div>
+        </form>
+    </div>
+    </div>
 
 <?php
 

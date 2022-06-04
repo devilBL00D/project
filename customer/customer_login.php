@@ -15,8 +15,8 @@
                     <input type="password" name="c_pass" placeholder="Create password" required>
                 </div>
 
-                <div class="input-box button">
-                    <input type="Submit" name="login" value="Log in">
+                <div class="input-box button" id="loginbtn">
+                    <input type="Submit" name="login" value="Sign In">
                 </div>
                 <div class="text">
                     <h3> <a href="../forgot_pass.php">Forgot password?</a></h3>
@@ -30,8 +30,8 @@
 
                 <h3>New User ?</h3>
 
-            <div class="button_wrapper1">
-                <div class="register-button" onclick="window.location.href = '../customer_register.php';">
+            <div class="btn_wrpr">
+                <div class="registersbtn" onclick="window.location.href = '../customer_register.php';">
                     <p>Register now </p>
 
                 </div>
@@ -95,3 +95,47 @@ if (isset($_POST['login'])) {
 }
 
 ?>
+
+
+<form action="" method="post">
+    <!--form Starts -->
+
+    <div class="form-group">
+        <!-- form-group Starts -->
+
+        <label>Email</label>
+
+        <input type="text" class="form-control" name="c_email" required>
+
+    </div><!-- form-group Ends -->
+
+    <div class="form-group">
+        <!-- form-group Starts -->
+
+        <label>Password</label>
+
+        <input type="password" class="form-control" name="c_pass" required>
+
+        <h4 align="center">
+
+            <a href="forgot_pass.php"> Forgot Password </a>
+
+        </h4>
+
+    </div><!-- form-group Ends -->
+
+    <div class="text-center">
+        <!-- text-center Starts -->
+
+        <button name="login" value="Login" class="btn btn-primary">
+
+            <i class="fa fa-sign-in"></i> Log in
+
+
+        </button>
+
+    </div><!-- text-center Ends -->
+
+
+</form>
+
