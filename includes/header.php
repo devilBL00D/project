@@ -9,11 +9,15 @@
 
 <link rel="shortcut icon" href="/images/LOGO.png" type="image/png">
   <title>Business Connect</title>
-  <link href="styles/bootstrap.min.css" rel="stylesheet">
-  <link href="styles/backend.css" rel="stylesheet">
+    <link rel="stylesheet" href="./customer/styles/customer_login.css">
+
+
 <!--  <link href="styles/style.css" rel="stylesheet">-->
   <link href="styles/navbar.css" rel="stylesheet">
-<!--  <link href="styles/registerstyle.css" rel="stylesheet">-->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/backend.css" rel="stylesheet">
+
+
 
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
