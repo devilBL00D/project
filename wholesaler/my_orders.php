@@ -48,15 +48,16 @@
 
             $customer_session = $_SESSION['customer_email'];
 
-            $get_customer = "select * from customers where customer_email='$customer_session'";
+            $get_wholesaler = "select * from wholesaler where wholesaler_email='$customer_session'";
 
-            $run_customer = mysqli_query($con, $get_customer);
+            $run_wholesaler = mysqli_query($con, $get_wholesaler);
 
-            $row_customer = mysqli_fetch_array($run_customer);
+            $row_wholesaler = mysqli_fetch_array($run_wholesaler);
 
-            $customer_id = $row_customer['customer_id'];
+            $wholesaler_id = $row_wholesaler['wholesaler_id'];
 
-            $get_orders = "select * from customer_orders where customer_id='$customer_id'";
+
+            $get_orders = "select * from customer_orders where wholesaler_id='$wholesaler_id'";
 
             $run_orders = mysqli_query($con, $get_orders);
 
