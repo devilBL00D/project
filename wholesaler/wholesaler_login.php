@@ -2,14 +2,13 @@
 session_start();
 include("includes/db.php");
 include("includes/header.php");
-include("functions/functions.php");
-include("includes/main.php");
-?>
-    <div class="main-box">
-    <p class="text-muted">
-        This portal is for wholesaler login only. If you are not a wholesaler please use the cutomer login link below.
 
-    </p>
+?>
+    <div class="logo_con">
+        <img src="images/LOGO.png" class="logo" alt="BC">
+    </div>
+    <div class="main-box">
+
     <div class="wrapper_W">
         <div class="heading">
             <h2>Log IN</h2>
@@ -32,12 +31,17 @@ include("includes/main.php");
             <div class="text">
                 <h3> <a href="../forgot_pass.php">Forgot password?</a></h3>
             </div>
-            <div class="text">
+
+            <div class="text" id="spaceing">
                 <h3> <a href="../customer/customer_login.php">Click here for customer login</a></h3>
             </div>
         </form>
     </div>
+
     </div>
+<?php
+    include ("../includes/footer.php") ?>
+    include ("../includes/footer.php") ?>
 
 <?php
 
