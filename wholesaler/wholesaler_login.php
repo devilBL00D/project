@@ -25,7 +25,7 @@ include("includes/header.php");
                 <input type="password" name="c_pass" placeholder="Enter password" required>
             </div>
 
-            <div class="input-box button" >
+            <div class="input-box button" id="wlbtn" >
                 <input type="Submit" name="login" value="Sign In">
             </div>
             <div class="text">

@@ -42,7 +42,7 @@
     align-items: center;
     flex-direction: column;
     background: #fff;
-  
+
     padding: 3rem;
     border-radius: 6px;
     box-shadow: 0 5px 10px #2f3d47;
@@ -119,6 +119,9 @@ form .text h3 a:hover{
 }
 #spaceing{
     margin-top: 2vh;
+}
+#wlbtn{
+    height: 2rem;
 }
 
 
