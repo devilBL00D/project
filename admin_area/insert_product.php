@@ -6,123 +6,123 @@ if (!isset($_SESSION['admin_email'])) {
 } else {
 
 ?>
-  <!DOCTYPE html>
+<!DOCTYPE html>
 
-  <html>
+<html>
 
-  <head>
+<head>
 
     <title> Insert Products </title>
 
 
     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
     <script>
-      tinymce.init({
+    tinymce.init({
         selector: '#product_desc,#product_features'
-      });
+    });
     </script>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
     <div class="row">
-      <!-- row Starts -->
+        <!-- row Starts -->
 
-      <div class="col-lg-12">
-        <!-- col-lg-12 Starts -->
+        <div class="col-lg-12">
+            <!-- col-lg-12 Starts -->
 
-        <ol class="breadcrumb">
-          <!-- breadcrumb Starts -->
+            <ol class="breadcrumb">
+                <!-- breadcrumb Starts -->
 
-          <li class="active">
+                <li class="active">
 
-            <i class="fa fa-dashboard"> </i> Dashboard / Insert Products
+                    <i class="fa fa-dashboard"> </i> Dashboard / Insert Products
 
-          </li>
+                </li>
 
-        </ol><!-- breadcrumb Ends -->
+            </ol><!-- breadcrumb Ends -->
 
-      </div><!-- col-lg-12 Ends -->
+        </div><!-- col-lg-12 Ends -->
 
     </div><!-- row Ends -->
 
 
     <div class="row">
-      <!-- 2 row Starts -->
+        <!-- 2 row Starts -->
 
-      <div class="col-lg-12">
-        <!-- col-lg-12 Starts -->
+        <div class="col-lg-12">
+            <!-- col-lg-12 Starts -->
 
-        <div class="panel panel-default">
-          <!-- panel panel-default Starts -->
+            <div class="panel panel-default">
+                <!-- panel panel-default Starts -->
 
-          <div class="panel-heading">
-            <!-- panel-heading Starts -->
+                <div class="panel-heading">
+                    <!-- panel-heading Starts -->
 
-            <h3 class="panel-title">
+                    <h3 class="panel-title">
 
-              <i class="fa fa-money fa-fw"></i> Insert Products
+                        <i class="fa fa-money fa-fw"></i> Insert Products
 
-            </h3>
+                    </h3>
 
-          </div><!-- panel-heading Ends -->
+                </div><!-- panel-heading Ends -->
 
-          <div class="panel-body">
-            <!-- panel-body Starts -->
+                <div class="panel-body">
+                    <!-- panel-body Starts -->
 
-            <form class="form-horizontal" method="post" enctype="multipart/form-data">
-              <!-- form-horizontal Starts -->
+                    <form class="form-horizontal" method="post" enctype="multipart/form-data">
+                        <!-- form-horizontal Starts -->
 
-              <div class="form-group">
-                <!-- form-group Starts -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-                <label class="col-md-3 control-label"> Product Title </label>
+                            <label class="col-md-3 control-label"> Product Title </label>
 
-                <div class="col-md-6">
+                            <div class="col-md-6">
 
-                  <input type="text" name="product_title" class="form-control" required>
+                                <input type="text" name="product_title" class="form-control" required>
 
-                </div>
+                            </div>
 
-              </div><!-- form-group Ends -->
-
-
-              <div class="form-group">
-                <!-- form-group Starts -->
-
-                <label class="col-md-3 control-label"> Product Url </label>
-
-                <div class="col-md-6">
-
-                  <input type="text" name="product_url" class="form-control" required>
-
-                  <br>
-
-                  <p style="font-size:15px; font-weight:bold;">
-
-                    Product Url Example : navy-blue-t-shirt
-
-                  </p>
-
-                </div>
-
-              </div><!-- form-group Ends -->
+                        </div><!-- form-group Ends -->
 
 
-              <div class="form-group">
-                <!-- form-group Starts -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-                <label class="col-md-3 control-label"> Select A Manufacturer </label>
+                            <label class="col-md-3 control-label"> Product Url </label>
 
-                <div class="col-md-6">
+                            <div class="col-md-6">
 
-                  <select class="form-control" name="manufacturer">
-                    <!-- select manufacturer Starts -->
+                                <input type="text" name="product_url" class="form-control" required>
 
-                    <option> Select A Manufacturer </option>
+                                <br>
 
-                    <?php
+                                <p style="font-size:15px; font-weight:bold;">
+
+                                    Product Url Example : navy-blue-t-shirt
+
+                                </p>
+
+                            </div>
+
+                        </div><!-- form-group Ends -->
+
+
+                        <div class="form-group">
+                            <!-- form-group Starts -->
+
+                            <label class="col-md-3 control-label"> Select A Manufacturer </label>
+
+                            <div class="col-md-6">
+
+                                <select class="form-control" name="manufacturer">
+                                    <!-- select manufacturer Starts -->
+
+                                    <option> Select A Manufacturer </option>
+
+                                    <?php
 
                     $get_manufacturer = "select * from manufacturers";
                     $run_manufacturer = mysqli_query($con, $get_manufacturer);
@@ -135,26 +135,26 @@ if (!isset($_SESSION['admin_email'])) {
 
                     ?>
 
-                  </select><!-- select manufacturer Ends -->
+                                </select><!-- select manufacturer Ends -->
 
-                </div>
+                            </div>
 
-              </div><!-- form-group Ends -->
-
-
-              <div class="form-group">
-                <!-- form-group Starts -->
-
-                <label class="col-md-3 control-label"> Product Category </label>
-
-                <div class="col-md-6">
-
-                  <select name="product_cat" class="form-control">
-
-                    <option> Select a Product Category </option>
+                        </div><!-- form-group Ends -->
 
 
-                    <?php
+                        <div class="form-group">
+                            <!-- form-group Starts -->
+
+                            <label class="col-md-3 control-label"> Product Category </label>
+
+                            <div class="col-md-6">
+
+                                <select name="product_cat" class="form-control">
+
+                                    <option> Select a Product Category </option>
+
+
+                                    <?php
 
                     $get_p_cats = "select * from product_categories";
 
@@ -173,25 +173,25 @@ if (!isset($_SESSION['admin_email'])) {
                     ?>
 
 
-                  </select>
+                                </select>
 
-                </div>
+                            </div>
 
-              </div><!-- form-group Ends -->
+                        </div><!-- form-group Ends -->
 
-              <div class="form-group">
-                <!-- form-group Starts -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-                <label class="col-md-3 control-label"> Category </label>
+                            <label class="col-md-3 control-label"> Category </label>
 
-                <div class="col-md-6">
+                            <div class="col-md-6">
 
 
-                  <select name="cat" class="form-control">
+                                <select name="cat" class="form-control">
 
-                    <option> Select a Category </option>
+                                    <option> Select a Category </option>
 
-                    <?php
+                                    <?php
 
                     $get_cat = "select * from categories ";
 
@@ -209,212 +209,214 @@ if (!isset($_SESSION['admin_email'])) {
                     ?>
 
 
-                  </select>
+                                </select>
 
-                </div>
+                            </div>
 
-              </div><!-- form-group Ends -->
+                        </div><!-- form-group Ends -->
 
-              <div class="form-group">
-                <!-- form-group Starts -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-                <label class="col-md-3 control-label"> Product Image 1 </label>
+                            <label class="col-md-3 control-label"> Product Image 1 </label>
 
-                <div class="col-md-6">
+                            <div class="col-md-6">
 
-                  <input type="file" name="product_img1" class="form-control" required>
+                                <input type="file" name="product_img1" class="form-control" required>
 
-                </div>
+                            </div>
 
-              </div><!-- form-group Ends -->
+                        </div><!-- form-group Ends -->
 
-              <div class="form-group">
-                <!-- form-group Starts -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-                <label class="col-md-3 control-label"> Product Image 2 </label>
+                            <label class="col-md-3 control-label"> Product Image 2 </label>
 
-                <div class="col-md-6">
+                            <div class="col-md-6">
 
-                  <input type="file" name="product_img2" class="form-control" required>
+                                <input type="file" name="product_img2" class="form-control" required>
 
-                </div>
+                            </div>
 
-              </div><!-- form-group Ends -->
+                        </div><!-- form-group Ends -->
 
-              <div class="form-group">
-                <!-- form-group Starts -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-                <label class="col-md-3 control-label"> Product Image 3 </label>
+                            <label class="col-md-3 control-label"> Product Image 3 </label>
 
-                <div class="col-md-6">
+                            <div class="col-md-6">
 
-                  <input type="file" name="product_img3" class="form-control" required>
+                                <input type="file" name="product_img3" class="form-control" required>
 
-                </div>
+                            </div>
 
-              </div><!-- form-group Ends -->
+                        </div><!-- form-group Ends -->
 
-              <div class="form-group">
-                <!-- form-group Starts -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-                <label class="col-md-3 control-label"> Product Price </label>
+                            <label class="col-md-3 control-label"> Product Price </label>
 
-                <div class="col-md-6">
+                            <div class="col-md-6">
 
-                  <input type="text" name="product_price" class="form-control" required>
+                                <input type="text" name="product_price" class="form-control" required>
 
-                </div>
+                            </div>
 
-              </div><!-- form-group Ends -->
+                        </div><!-- form-group Ends -->
 
-              <div class="form-group">
-                <!-- form-group Starts -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-                <label class="col-md-3 control-label"> Product Sale Price </label>
+                            <label class="col-md-3 control-label"> Product Sale Price </label>
 
-                <div class="col-md-6">
+                            <div class="col-md-6">
 
-                  <input type="text" name="psp_price" class="form-control" required>
+                                <input type="text" name="psp_price" class="form-control" required>
 
-                </div>
+                            </div>
 
-              </div><!-- form-group Ends -->
+                        </div><!-- form-group Ends -->
 
-              <div class="form-group">
-                <!-- form-group Starts -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-                <label class="col-md-3 control-label"> Product Keywords </label>
+                            <label class="col-md-3 control-label"> Product Keywords </label>
 
-                <div class="col-md-6">
+                            <div class="col-md-6">
 
-                  <input type="text" name="product_keywords" class="form-control" required>
+                                <input type="text" name="product_keywords" class="form-control" required>
 
-                </div>
+                            </div>
 
-              </div><!-- form-group Ends -->
+                        </div><!-- form-group Ends -->
 
-              <div class="form-group">
-                <!-- form-group Starts -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-                <label class="col-md-3 control-label"> Product Tabs </label>
+                            <label class="col-md-3 control-label"> Product Tabs </label>
 
-                <div class="col-md-6">
+                            <div class="col-md-6">
 
-                  <ul class="nav nav-tabs">
-                    <!-- nav nav-tabs Starts -->
+                                <ul class="nav nav-tabs">
+                                    <!-- nav nav-tabs Starts -->
 
-                    <li class="active">
+                                    <li class="active">
 
-                      <a data-toggle="tab" href="#description"> Product Description </a>
+                                        <a data-toggle="tab" href="#description"> Product Description </a>
 
-                    </li>
+                                    </li>
 
-                    <li>
+                                    <li>
 
-                      <a data-toggle="tab" href="#features"> Product Features </a>
+                                        <a data-toggle="tab" href="#features"> Product Features </a>
 
-                    </li>
+                                    </li>
 
-                    <li>
+                                    <li>
 
-                      <a data-toggle="tab" href="#video"> Sounds And Videos </a>
+                                        <a data-toggle="tab" href="#video"> Sounds And Videos </a>
 
-                    </li>
+                                    </li>
 
-                  </ul><!-- nav nav-tabs Ends -->
+                                </ul><!-- nav nav-tabs Ends -->
 
-                  <div class="tab-content">
-                    <!-- tab-content Starts -->
+                                <div class="tab-content">
+                                    <!-- tab-content Starts -->
 
-                    <div id="description" class="tab-pane fade in active">
-                      <!-- description tab-pane fade in active Starts -->
+                                    <div id="description" class="tab-pane fade in active">
+                                        <!-- description tab-pane fade in active Starts -->
 
-                      <br>
+                                        <br>
 
-                      <textarea name="product_desc" class="form-control" rows="15" id="product_desc">
-
-
-</textarea>
-
-                    </div><!-- description tab-pane fade in active Ends -->
-
-
-                    <div id="features" class="tab-pane fade in">
-                      <!-- features tab-pane fade in Starts -->
-
-                      <br>
-
-                      <textarea name="product_features" class="form-control" rows="15" id="product_features">
+                                        <textarea name="product_desc" class="form-control" rows="15" id="product_desc">
 
 
 </textarea>
 
-                    </div><!-- features tab-pane fade in Ends -->
+                                    </div><!-- description tab-pane fade in active Ends -->
 
 
-                    <div id="video" class="tab-pane fade in">
-                      <!-- video tab-pane fade in Starts -->
+                                    <div id="features" class="tab-pane fade in">
+                                        <!-- features tab-pane fade in Starts -->
 
-                      <br>
+                                        <br>
 
-                      <textarea name="product_video" class="form-control" rows="15">
+                                        <textarea name="product_features" class="form-control" rows="15"
+                                            id="product_features">
 
 
 </textarea>
 
-                    </div><!-- video tab-pane fade in Ends -->
+                                    </div><!-- features tab-pane fade in Ends -->
 
 
-                  </div><!-- tab-content Ends -->
+                                    <div id="video" class="tab-pane fade in">
+                                        <!-- video tab-pane fade in Starts -->
 
-                </div>
+                                        <br>
 
-              </div><!-- form-group Ends -->
+                                        <textarea name="product_video" class="form-control" rows="15">
 
-              <div class="form-group">
-                <!-- form-group Starts -->
 
-                <label class="col-md-3 control-label"> Product Label </label>
+</textarea>
 
-                <div class="col-md-6">
+                                    </div><!-- video tab-pane fade in Ends -->
 
-                  <input type="text" name="product_label" class="form-control" required>
 
-                </div>
+                                </div><!-- tab-content Ends -->
 
-              </div><!-- form-group Ends -->
+                            </div>
 
-              <div class="form-group">
-                <!-- form-group Starts -->
+                        </div><!-- form-group Ends -->
 
-                <label class="col-md-3 control-label"></label>
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-                <div class="col-md-6">
+                            <label class="col-md-3 control-label"> Product Label </label>
 
-                  <input type="submit" name="submit" value="Insert Product" class="btn btn-primary form-control">
+                            <div class="col-md-6">
 
-                </div>
+                                <input type="text" name="product_label" class="form-control" required>
 
-              </div><!-- form-group Ends -->
+                            </div>
 
-            </form><!-- form-horizontal Ends -->
+                        </div><!-- form-group Ends -->
 
-          </div><!-- panel-body Ends -->
+                        <div class="form-group">
+                            <!-- form-group Starts -->
 
-        </div><!-- panel panel-default Ends -->
+                            <label class="col-md-3 control-label"></label>
 
-      </div><!-- col-lg-12 Ends -->
+                            <div class="col-md-6">
+
+                                <input type="submit" name="submit" value="Insert Product"
+                                    class="btn btn-primary form-control">
+
+                            </div>
+
+                        </div><!-- form-group Ends -->
+
+                    </form><!-- form-horizontal Ends -->
+
+                </div><!-- panel-body Ends -->
+
+            </div><!-- panel panel-default Ends -->
+
+        </div><!-- col-lg-12 Ends -->
 
     </div><!-- 2 row Ends -->
 
 
 
 
-  </body>
+</body>
 
-  </html>
+</html>
 
-  <?php
+<?php
 
   if (isset($_POST['submit'])) {
 
@@ -446,9 +448,9 @@ if (!isset($_SESSION['admin_email'])) {
     $temp_name2 = $_FILES['product_img2']['tmp_name'];
     $temp_name3 = $_FILES['product_img3']['tmp_name'];
 
-    move_uploaded_file($temp_name1, "product_images/$product_img1");
-    move_uploaded_file($temp_name2, "product_images/$product_img2");
-    move_uploaded_file($temp_name3, "product_images/$product_img3");
+    move_uploaded_file($temp_name1, "../wholesaler/product_images/$product_img1");
+    move_uploaded_file($temp_name2, "../wholesaler/product_images/$product_img2");
+    move_uploaded_file($temp_name3, "../wholesaler/product_images/$product_img3");
 
     $insert_product = "insert into products (p_cat_id,cat_id,manufacturer_id,date,product_title,product_url,product_img1,product_img2,product_img3,product_price,product_psp_price,product_desc,product_features,product_video,product_keywords,product_label,status) values ('$product_cat','$cat','$manufacturer_id',NOW(),'$product_title','$product_url','$product_img1','$product_img2','$product_img3','$product_price','$psp_price','$product_desc','$product_features','$product_video','$product_keywords','$product_label','$status')";
 

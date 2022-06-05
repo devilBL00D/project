@@ -149,7 +149,7 @@ function getPro()
 
 <a href='$pro_url' >
 
-<img src='admin_area/product_images/$pro_img1' class='img-responsive' >
+<img src='./wholesaler/product_images/$pro_img1' class='img-responsive' >
 
 </a>
 
