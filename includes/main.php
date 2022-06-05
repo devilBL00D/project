@@ -59,24 +59,24 @@
       </div>
     </div>
     <!-- bottomline -->
-    <div class="container">
-      <nav>
-        <input type="checkbox" id="nav" class="hidden">
-        <label for="nav" class="nav-btn">
-          <i></i>
-          <i></i>
-          <i></i>
-        </label>
-        <div class="logo">
-          <img src="./images/LOGO.png" class="logo" alt="BC">
-        </div>
-        <div class="nav-wrapper">
-          <ul>
-            <li><a href="#">Home</a></li>
+<!--    <div class="container">-->
+<!--      <nav>-->
+<!--        <input type="checkbox" id="nav" class="hidden">-->
+<!--        <label for="nav" class="nav-btn">-->
+<!--          <i></i>-->
+<!--          <i></i>-->
+<!--          <i></i>-->
+<!--        </label>-->
+<!--        <div class="logo">-->
+<!--          <img src="./images/LOGO.png" class="logo" alt="BC">-->
+<!--        </div>-->
+<!--        <div class="nav-wrapper">-->
+<!--          <ul>-->
+<!--            <li><a href="#">Home</a></li>-->
 <!--            <li><a href="#">Notifications</a></li>-->
 <!--            <li><a href="#">Cart</a></li>-->
-          </ul>
-        </div>
-      </nav>
-    </div>
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </nav>-->
+<!--    </div>-->
   </header>

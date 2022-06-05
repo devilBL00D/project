@@ -900,6 +900,8 @@ img {
 }
 
 .hero {
+  /*adding new line here*/
+  margin-top: 0.5vh;
   padding-top: 300px;
   padding-bottom: 140px;
   color: #fff;
