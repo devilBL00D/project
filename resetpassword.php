@@ -56,7 +56,7 @@ if (isset($_SESSION['token']) && isset($_SESSION['email']) && $_SESSION['role']=
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> BC - Sign IN </title>
-    <link rel="stylesheet" href="css/resetpassword.css">
+    <link rel="stylesheet" href="styles/resetpassword.css">
 
     <link rel="stylesheet" href="css/logo-header.css">
 
@@ -78,8 +78,8 @@ if (isset($_SESSION['token']) && isset($_SESSION['email']) && $_SESSION['role']=
     <main>
 
 
-        <div class="main-box">
-            <div class="wrapper_N">
+        <div class="main-box_R">
+            <div class="wrapper_R">
 
                 <h2>Enter a new Password</h2>
                 <!--            <p> Please enter a password containing numbers,alphabets & symbols for max</p>-->

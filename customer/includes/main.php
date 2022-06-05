@@ -66,29 +66,29 @@
 
         <div class="logo">
           <a class="logo__link" href="../index.php">
-            <img class="logo__img" src="images/logo.png" alt="Avenue fashion logotype" width="237" height="19">
+            <img class="logo__img" src="images/LOGO.png" alt="Business Connect logotype" width="237" height="19">
           </a>
         </div>
 
         <nav class="main-nav">
           <ul class="categories">
 
-            <li class="categories__item">
-              <a class="categories__link" href="#">
-                Mens
-                <i class="icon-down-open-1"></i>
-              </a>
-              </li>
+<!--            <li class="categories__item">-->
+<!--              <a class="categories__link" href="#">-->
+<!--                Mens-->
+<!--                <i class="icon-down-open-1"></i>-->
+<!--              </a>-->
+<!--              </li>-->
+<!---->
+<!--            <li class="categories__item">-->
+<!--              <a class="categories__link" href="#">-->
+<!--                Womens-->
+<!--            -->
+<!--              </a>-->
+<!--            </li>-->
 
             <li class="categories__item">
-              <a class="categories__link" href="#">
-                Womens
-            
-              </a>
-            </li>
-
-            <li class="categories__item">
-              <a class="categories__link categories__link--active" href="shop.php">
+              <a class="categories__link categories__link--active" href="../shop.php">
                 Shop
               </a>
             </li>
