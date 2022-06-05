@@ -56,7 +56,7 @@ include("includes/main.php");
 
           <center>
 
-            <h3> Enter Your Email Below , We Will Send You , Your Password </h3>
+            <h3> Enter Your Email Below , We Will Send You  A Password Reset Link </h3>
 
           </center>
 
@@ -72,7 +72,7 @@ include("includes/main.php");
 
             <br>
 
-            <input type="submit" name="forgot_pass" class="btn btn-primary" value="Send My Password">
+            <input type="submit" name="forgot_pass" class="btn btn-primary" value="Send Link">
 
           </form><!-- form Ends -->
 
@@ -157,12 +157,12 @@ if (isset($_POST['forgot_pass'])) {
     <h3>We received a request to reset your password.</h3>
     <a href='http://localhost/project/resetpassword.php'>
             
-            Click Here To Confirm Email
+            Click Here To Confirm 
             
             </a>
     <br><br>
     <p>With regrads,</p>
-    <b>Nijam Shrestha</b>";
+    <b>Business Connect</b>";
 
     if (!$mail->send()) {
 ?>
@@ -173,7 +173,7 @@ if (isset($_POST['forgot_pass'])) {
     } else {
     ?>
       <script>
-        alert("<?php echo " Check email to reset password " ?>");
+        alert("<?php echo " Check email to reset your password " ?>");
       </script>
 <?php
     }

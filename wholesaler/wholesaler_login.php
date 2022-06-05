@@ -33,7 +33,7 @@ include("includes/header.php");
             </div>
 
             <div class="text" id="spaceing">
-                <h3> <a href="../customer/customer_login.php">Click here for customer login</a></h3>
+                <h3> <a href="../checkout.php">Click here for customer login</a></h3>
             </div>
         </form>
     </div>
