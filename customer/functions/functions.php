@@ -111,7 +111,7 @@ echo "
 
 <a href='details.php?pro_id=$pro_id' >
 
-<img src='admin_area/product_images/$pro_img1' class='img-responsive' >
+<img src='./wholesaler/product_images/$pro_img1' class='img-responsive' >
 
 </a>
 
