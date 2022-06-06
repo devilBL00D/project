@@ -1,6 +1,6 @@
 <?php
 
-if(!isset($_SESSION['customer_email'])){
+if (!isset($_SESSION['customer_email']) && $_SESSION['role'] != "wholesaler"){
 
 echo "<script>window.open('wholesaler_login.php','_self')</script>";
 
